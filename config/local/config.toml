@@ -1,0 +1,18 @@
+service = "server"
+
+[logconfig]
+    logpath = "C:/workspace/logs/server.log"
+    loglevel = "debug"
+
+[databases]
+    [databases.postgres]
+        server = "54.180.2.92"
+        port = "5432"
+        enable = true
+[servers]
+    [servers.Server]
+        ip = "127.0.0.1"
+        port = ":7011"
+    [servers.Client]
+        ip = "127.0.0.1"
+        port = ":7012"
